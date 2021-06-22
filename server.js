@@ -1,11 +1,27 @@
 const express = require('express');
 const path = require('path');
+var bodyParser = require("body-parser"),
+    cons = require("consolidate"),
+    dust = require("dustjs-helpers"),
+    pg = require("pg"),;
+
 
   
 const app = express();
-  
+
+var connect = "postgres://Project:Postgres!2002@localhost/Crisp";
+
+app.engine("dust", cons.dust);
+
 const port = 8000;
   
+app.set("view engine", "dust");
+app.set("views", __dirname + "/views");
+
+
+
+
+
 app.get('/', function (req, res) {
     res.send('we are at the root route of our server');
   })
