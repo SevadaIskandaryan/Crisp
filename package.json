@@ -11,7 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "*",
+    "consolidate": "*",
+    "dust": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
     "express": "^4.17.1",
-    "nodemon": "^2.0.7"
+    "jade": "^1.11.0",
+    "nodemon": "^2.0.7",
+    "pg": "*"
   }
 }
